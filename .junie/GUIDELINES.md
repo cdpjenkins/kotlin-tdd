@@ -8,3 +8,5 @@ code for scenarios that are not covered by a failing test yet.
 If I ask you to refactor the code, please refactor the code to improve code quality, without changing its behaviour.
  
 Prefer outside-in testing to make the code easier to refactor later.
+
+Match suggested refactorings to the size of the problem. Don't think too much. Don't overengineer!
