@@ -1,3 +1,4 @@
+import org.example.fizzBuzz
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import kotlin.test.assertEquals
@@ -44,10 +45,8 @@ class HelloKotlinTest {
         assertThrows<IllegalArgumentException> { fizzBuzz(-1) }
     }
 
-    private fun fizzBuzz(i: Int): String {
-        if (i == -1) throw IllegalArgumentException("Parameter must be greater than 0")
-        if (i % 5 == 0) return "buzz"
-        if (i % 3 == 0) return "fizz"
-        return i.toString()
+    @Test
+    fun `passing 15 returns fizzbuzz`() {
+        assertEquals("fizzbuzz", fizzBuzz(15))
     }
 }
